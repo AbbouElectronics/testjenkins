@@ -6,9 +6,9 @@ pipeline {
         sh 'python --version'
       }
     }
-    stage('hello') {
+    stage('sql') {
       steps {
-        sh 'python3 sql.py'
+        sh 'python sql.py'
       }
     }
   }
