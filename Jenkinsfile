@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'ls -l'
+        sh 'ls'
       }
     }
     stage('hello') {
       steps {
-         sh 'ls -l'
+         sh 'ls'
       }
     }
   }
