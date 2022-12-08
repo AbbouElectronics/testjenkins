@@ -35,11 +35,10 @@ QtePlatine = 0
 for row in records:
         if (row[0] == "2.4.12 (pp4g)"):
 
-                tab=[f'Version = {row[0]}\t||       Qté = {row[1]} \n ']
-                taab.extend(tab)
+                tab=f'Version = {row[0]}\t||       Qté = {row[1]} \n '
                 QtePlatine = QtePlatine + row[1]
         else:
-                tab=[f'Version = {row[0]}\t\t||        Qté = {row[1]} \n ']
+                tab=f'Version = {row[0]}\t\t||        Qté = {row[1]} \n '
                 taab.extend(tab)
                 QtePlatine = QtePlatine + row[1]
 
@@ -53,8 +52,8 @@ str1=" Liste des Versions et des Qtés par Version des PP4G || " + str(QtePlatin
 str = ' '.join(taab)
 str.replace(',', '\n')
 mail_body = str1+"\n"+str
-recipients = ['b.berthin@noralsy.com','y.cosson@noralsy.com','a.isli@noralsy.com']
-#recipients = ['isliabdelai@gmail.com','a.isli@noralsy.com']
+#recipients = ['b.berthin@noralsy.com','y.cosson@noralsy.com','a.isli@noralsy.com']
+recipients = ['isliabdelai@gmail.com','a.isli@noralsy.com']
 mimemsg = MIMEMultipart()
 mimemsg['From']=mail_from
 mimemsg['To']=", ".join(recipients)
