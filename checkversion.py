@@ -35,10 +35,10 @@ QtePlatine = 0
 for row in records:
         if (row[0] == "2.4.12 (pp4g)"):
 
-                tab=f'Version = {row[0]}\t||       Qté = {row[1]} \n '
+                tab="Version = " + row[0]+ "\t" +"|| Qté = " + row[1] + " \n " 
                 QtePlatine = QtePlatine + row[1]
         else:
-                tab=f'Version = {row[0]}\t\t||        Qté = {row[1]} \n '
+                tab="Version = " + row[0]+ "\t\t" +"|| Qté = " + row[1] + " \n "
                 taab.extend(tab)
                 QtePlatine = QtePlatine + row[1]
 
