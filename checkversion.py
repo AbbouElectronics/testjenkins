@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3.10.8
 # coding: utf-8
 import mysql.connector
 import smtplib
